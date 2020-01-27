@@ -6,7 +6,8 @@
 #header{
 	background-color: #944420;
 	height: 100px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 a{
