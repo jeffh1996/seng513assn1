@@ -1,12 +1,12 @@
+.teemo{
+	height: 100px;
+	width: 100px;
+}
+
 #header{
 	background-color: #944420;
 	height: 100px;
 	text-align: center;
-}
-
-.teemo{
-	height: 100px;
-	width: 100px;
 }
 
 a{
