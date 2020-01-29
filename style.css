@@ -25,10 +25,10 @@ table{
 	text-align: center;
 }
 
-#mainPageContent{
+.pageContentContainer{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr); 
-	grid-auto-rows: 200px;
+	grid-auto-rows: minmax(200px, auto);
 }
 
 .sidenav {
@@ -39,10 +39,82 @@ table{
 	grid-row-end: 3; 
 }
 
-.mainpage { 
+#mainpage { 
 	border: 1px solid #fff;
 	grid-column-start: 2; 
 	grid-column-end: 7; 
 	grid-row-start: 1; 
 	grid-row-end: 2;
+}
+
+#championPageImg {
+	border: 1px solid #fff;
+	grid-column-start: 2; 
+	grid-column-end: 3; 
+	grid-row-start: 1; 
+	grid-row-end: 2;
+	white-space: nowrap;
+    text-align: center; 
+	margin: 1em 1em;
+}
+
+.vertAlign {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#championPageText {
+	border: 1px solid #fff;
+	grid-column-start: 3; 
+	grid-column-end: 4; 
+	grid-row-start: 1; 
+	grid-row-end: 2;
+}
+
+#championPageTable {
+	border: 1px solid #fff;
+	grid-column-start: 4; 
+	grid-column-end: 6; 
+	grid-row-start: 1; 
+	grid-row-end: 2;
+}
+
+#championPageAbilities {
+	border: 1px solid #f45f21;
+	grid-column-start: 2; 
+	grid-column-end: 3; 
+	grid-row-start: 2; 
+	grid-row-end: 7;
+	display: grid;
+	height: 250px;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: minmax(auto, auto);
+}
+
+.championPageNested{
+	grid-column: 1;
+	border: 1px solid #fff;
+	padding: 1em;
+}
+
+.abilitiesImg{
+	height: 50px;
+	width: 50px;
+}
+
+#abilitiesTextArea{
+	grid-column: 2;
+	height: 50px;
+}
+
+#mapPageImg{
+	border: 1px solid #fff;
+	grid-column-start: 2; 
+	grid-column-end: 7; 
+	grid-row-start: 1; 
+	grid-row-end: 6;
+	white-space: nowrap;
+    text-align: center; 
+	margin: 1em 1em;
 }
