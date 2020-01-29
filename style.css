@@ -24,3 +24,25 @@ body{
 table{
 	text-align: center;
 }
+
+#mainPageContent{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr); 
+	grid-auto-rows: 200px;
+}
+
+.sidenav {
+	border: 1px solid #ccc;
+	grid-column-start: 1; 
+	grid-column-end: 2; 
+	grid-row-start: 1; 
+	grid-row-end: 3; 
+}
+
+.mainpage { 
+	border: 1px solid #fff;
+	grid-column-start: 2; 
+	grid-column-end: 7; 
+	grid-row-start: 1; 
+	grid-row-end: 2;
+}
