@@ -126,6 +126,14 @@ table{
     text-align: center; 
 }
 
+#mapPageBottomText{
+	border: 1px solid #fff;
+	grid-column-start: 2; 
+	grid-column-end: 7; 
+	grid-row-start: 6; 
+	grid-row-end: 7;
+}
+
 #itemPageTable {
 	border: 1px solid #fff;
 	grid-column-start: 2; 
