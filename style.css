@@ -39,14 +39,42 @@ table{
 	text-align: center;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
 .pageContentContainer{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr); 
 	grid-auto-rows: minmax(200px, auto);
 }
 
-.sidenav {
-	border: 1px solid #ccc;
+.sidenavMain {
+	background-color: #13120F;
+	grid-column-start: 1; 
+	grid-column-end: 2; 
+	grid-row-start: 1; 
+	grid-row-end: 3; 
+}
+
+.sidenavA {
+	background-color: #13120F;
+	grid-column-start: 1; 
+	grid-column-end: 2; 
+	grid-row-start: 1; 
+	grid-row-end: 5; 
+}
+
+.sidenavB {
+	background-color: #13120F;
+	grid-column-start: 1; 
+	grid-column-end: 2; 
+	grid-row-start: 1; 
+	grid-row-end: 7; 
+}
+
+.sidenavC {
+	background-color: #13120F;
 	grid-column-start: 1; 
 	grid-column-end: 2; 
 	grid-row-start: 1; 
@@ -80,7 +108,7 @@ table{
 }
 
 #championPageTable {
-	border: 1px solid #fff;
+	text-align: center;
 	grid-column-start: 4; 
 	grid-column-end: 6; 
 	grid-row-start: 2; 
